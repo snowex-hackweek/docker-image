@@ -25,8 +25,8 @@ dependencies:
   - intake-stac
   - ipyleaflet
   - ipywidgets
-  - jupyter-book=0.10.1
-  - jupyterhub-singleuser 
+  - jupyter-book=0.10
+  - jupyterhub-singleuser
   - jupyter-server-proxy
   - jupyterlab-git
   - jupyterlab=3

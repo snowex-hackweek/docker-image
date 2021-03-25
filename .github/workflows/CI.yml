@@ -20,10 +20,10 @@ jobs:
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        IMAGE_NAME: "uwhackweeks/template"
+        IMAGE_NAME: "uwhackweek/snowex"
         #MYBINDERORG_TAG: ${{ github.event.ref }} #clutters output log
 
     - name: Report Image Size and Conda Packages
       run: |
         docker images
-        docker run uwhackweeks/template:latest conda list --export
+        docker run uwhackweeks/snowex:latest conda list --export
