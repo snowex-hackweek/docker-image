@@ -26,4 +26,4 @@ jobs:
     - name: Report Image Size and Conda Packages
       run: |
         docker images
-        docker run uwhackweeks/snowex:latest conda list --export
+        docker run uwhackweek/snowex:latest conda list --export
