@@ -40,6 +40,7 @@ dependencies:
   - panel
   - pillow
   - pip
+  - psycopg2
   - pyproj
   - python=3.8
   - rasterio
