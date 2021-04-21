@@ -27,6 +27,7 @@ dependencies:
   - intake-stac
   - ipyleaflet
   - ipywidgets
+  - ipython-sql
   - jupyter-book=0.10
   - jupyterhub-singleuser
   - jupyter-server-proxy
@@ -40,6 +41,7 @@ dependencies:
   - panel
   - pillow
   - pip
+  - psycopg2
   - pyproj
   - python=3.8
   - pystac
