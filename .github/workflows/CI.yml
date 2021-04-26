@@ -15,13 +15,17 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v2
 
+    - name: Get CalenderVersion UTC Date
+      id: calver
+      run: echo "::set-output name=version::$(date +'%Y.%m.%d')"
+
     - name: Build and Push
       uses: jupyterhub/repo2docker-action@master
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         IMAGE_NAME: "uwhackweek/snowex"
-        #MYBINDERORG_TAG: ${{ github.event.ref }} #clutters output log
+        ADDITIONAL_TAG: ${{ steps.calver.outputs.version }}
 
     - name: Report Image Size and Conda Packages
       run: |
