@@ -56,3 +56,5 @@ dependencies:
   - seaborn
   - shapely
   - zarr
+  - pip:
+    - sphinxcontrib-bibtex==2.2.0
