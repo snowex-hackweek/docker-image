@@ -28,7 +28,7 @@ dependencies:
   - ipyleaflet
   - ipywidgets
   - ipython-sql
-  - jupyter-book=0.10
+  - jupyter-book=0.10.2
   - jupyterhub-singleuser
   - jupyter-server-proxy
   - jupyterlab-git
@@ -58,5 +58,5 @@ dependencies:
   - zarr
   - pip:
     - sphinxcontrib-bibtex==2.2.0
-    #- stackstac
+    - stackstac
     - git+https://github.com/snowex/snowexsql.git
