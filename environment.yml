@@ -26,6 +26,7 @@ dependencies:
   - intake-xarray
   - intake-stac
   - ipyleaflet
+  - ipympl
   - ipywidgets
   - ipython-sql
   - jupyter-book=0.10.2
@@ -57,6 +58,7 @@ dependencies:
   - shapely
   - zarr
   - pip:
+    - pystac-client
     - sphinxcontrib-bibtex==2.2.0
     - stackstac
     - git+https://github.com/snowex/snowexsql.git
