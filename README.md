@@ -4,7 +4,7 @@ This repository builds a [JupyterHub](https://jupyter.org/hub) environment with 
 
 [![Action Status](https://github.com/snowex-hackweek/docker-image/workflows/CI/badge.svg)](https://github.com/snowex-hackweek/docker-image/actions)
 [![Docker Pulls](https://img.shields.io/docker/pulls/uwhackweek/snowex)](https://hub.docker.com/r/uwhackweek/snowex/tags)
-[![BinderHub](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/snowex-hackweek/docker-image/main?urlpath=git-pull?repo=https://github.com/snowex-hackweek/website%26amp%3Bbranch=main%26amp%3Burlpath=lab)
+[![BinderHub](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/snowex-hackweek/docker-image/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fsnowex-hackweek%252Fwebsite%26urlpath%3Dlab%252Ftree%252Fwebsite%252Fbook%252Ftutorials%26branch%3Dmain)
 
 https://hub.docker.com/r/uwhackweek/snowex/tags
 
