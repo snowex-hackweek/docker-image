@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - bokeh
-  - cartopy=0.19
+  - cartopy
   - contextily
   - dask
   - dask-labextension
@@ -40,13 +40,13 @@ dependencies:
   - numpy
   - pandas
   - panel
-  - pdal=2.3
+  - pdal=2.2
   - pillow
   - pip
   - psycopg2
   - pyproj
   - python=3.8
-  - python-pdal=2.4
+  - python-pdal=2.2
   - pystac
   - rasterio
   - rasterstats
