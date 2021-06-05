@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - bokeh
-  - cartopy
+  - cartopy=0.19
   - contextily
   - dask
   - dask-labextension
