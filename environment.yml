@@ -46,7 +46,7 @@ dependencies:
   - psycopg2
   - pyproj
   - python=3.8
-  - python-pdal=2.2
+  - python-pdal=2.4=py38h1fd1430_1
   - pystac
   - rasterio
   - rasterstats
