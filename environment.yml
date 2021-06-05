@@ -40,13 +40,13 @@ dependencies:
   - numpy
   - pandas
   - panel
-  - pdal=2.3
+  - pdal=2.2
   - pillow
   - pip
   - psycopg2
   - pyproj
   - python=3.9
-  - python-pdal=2.4
+  - python-pdal=2.4=py38h1fd1430_1
   - pystac
   - rasterio
   - rasterstats
