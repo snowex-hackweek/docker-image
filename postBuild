@@ -3,4 +3,4 @@
 cd /tmp
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.2.11.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
-./aws/install -i /srv/aws-cli -b /srv/conda/bin
+./aws/install -i /srv/conda/aws-cli -b /srv/conda/bin
