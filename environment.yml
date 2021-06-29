@@ -64,3 +64,4 @@ dependencies:
     - sphinxcontrib-bibtex==2.2.0
     - stackstac
     - git+https://github.com/snowex/snowexsql.git
+    - git+https://github.com/snowex-hackweek/snowmicropyn.git@master
