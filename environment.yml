@@ -14,11 +14,12 @@ dependencies:
   - fsspec
   - gcsfs
   - gdal
-  - gh
   - geoalchemy2
   - geojson
   - geopandas
   - geoviews
+  - gh
+  - git
   - h5py
   - holoviews
   - hvplot
