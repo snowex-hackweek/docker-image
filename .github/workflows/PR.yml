@@ -31,9 +31,7 @@ jobs:
         path: conda-linux-64.lock
 
   build-jupyerbook:
-    # This workflow accesses secrets so only run if labelled
-    # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
-    if: contains(github.event.pull_request.labels.*.name, 'preview')
+    # PRs from FORKS will not have access to the secrets needed to run this step
     needs: [build-image-without-pushing]
     runs-on: ubuntu-20.04
     steps:
