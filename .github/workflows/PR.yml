@@ -29,3 +29,45 @@ jobs:
       with:
         name: lockfile
         path: conda-linux-64.lock
+
+  build-jupyerbook:
+    # This workflow accesses secrets so only run if labelled
+    # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+    if: contains(github.event.pull_request.labels.*.name, 'preview')
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout PR
+      uses: actions/checkout@v2
+      with: 
+       repository: snowex-hackweek/website
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-west-2
+        role-to-assume: github-actions-role
+        role-duration-seconds: 900
+
+    # NOTE: this gets picked up b/c of the docker run -v mount
+    - name: Configure NASA Earthdata Login
+      run: |
+        echo "machine urs.earthdata.nasa.gov login ${{ secrets.EARTHDATA_LOGIN }} password ${{ secrets.EARTHDATA_PASSWORD }}" > .netrc
+        chmod 0600 .netrc
+    
+    # NOTE github actions id: uid=1001(runner) gid=121(docker) groups=121(docker),4(adm),101(systemd-journal)
+    # Docker volume mount requires uid matching host, so we change from default (jovyan uid=1000)
+    - name: Build JupyterBook
+      run: |
+        docker run -u 1001 \
+        -e AWS_REGION -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN \
+        -v ${{ github.workspace }}:/home/jovyan:rw \
+        $DOCKER_IMAGE jb build book --warningiserror --keep-going
+    
+    - name: Save Build
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: book/_build/
