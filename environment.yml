@@ -30,6 +30,7 @@ dependencies:
   - ipympl
   - ipywidgets
   - ipython-sql
+  - jq
   - jupyter-book=0.10.2
   - jupyterhub-singleuser
   - jupyter-server-proxy
