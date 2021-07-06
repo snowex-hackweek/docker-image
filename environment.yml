@@ -66,3 +66,4 @@ dependencies:
     - stackstac
     - git+https://github.com/snowex/snowexsql.git
     - git+https://github.com/snowex-hackweek/snowmicropyn.git@master
+    - git+https://github.com/ICESat2-SlideRule/sliderule-python@v1.0.7
