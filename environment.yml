@@ -23,6 +23,7 @@ dependencies:
   - h5py
   - holoviews
   - hvplot
+  - icepyx
   - intake
   - intake-xarray
   - intake-stac
@@ -42,6 +43,7 @@ dependencies:
   - numpy
   - pandas
   - panel
+  - param=1.10
   - pdal=2.2
   - pillow
   - pip
