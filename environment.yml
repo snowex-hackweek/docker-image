@@ -43,7 +43,7 @@ dependencies:
   - numpy
   - pandas
   - panel
-  - param=1.10
+  - param>=1.11.1
   - pdal=2.2
   - pillow
   - pip
