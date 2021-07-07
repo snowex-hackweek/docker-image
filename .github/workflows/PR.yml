@@ -30,12 +30,7 @@ jobs:
         name: lockfile
         path: conda-linux-64.lock
 
-  build-jupyerbook:
-    # PRs from FORKS will not have access to the secrets needed to run this step
-    needs: [build-image-without-pushing]
-    runs-on: ubuntu-20.04
-    steps:
-    - name: Checkout PR
+    - name: Checkout JupyterBook Website
       uses: actions/checkout@v2
       with: 
        repository: snowex-hackweek/website
