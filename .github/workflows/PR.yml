@@ -30,7 +30,7 @@ jobs:
         name: lockfile
         path: conda-linux-64.lock
 
-    - name: Checkout PR
+    - name: Checkout JupyterBook Website
       uses: actions/checkout@v2
       with: 
        repository: snowex-hackweek/website
