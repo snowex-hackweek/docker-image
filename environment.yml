@@ -62,6 +62,7 @@ dependencies:
   - scipy
   - seaborn
   - shapely
+  - tensorflow=2.5
   - zarr
   - pip:
     - pystac-client
