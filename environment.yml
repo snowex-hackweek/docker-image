@@ -11,8 +11,8 @@ dependencies:
   - descartes
   - distributed
   - fiona
+  - folium
   - fsspec
-  - gcsfs
   - gdal
   - geoalchemy2
   - geojson
@@ -24,14 +24,10 @@ dependencies:
   - holoviews
   - hvplot
   - icepyx
-  - intake
-  - intake-xarray
-  - intake-stac
   - ipyleaflet
   - ipympl
   - ipywidgets
   - ipython-sql
-  - jq
   - jupyter-book=0.10.2
   - jupyterhub-singleuser
   - jupyter-server-proxy
@@ -44,29 +40,25 @@ dependencies:
   - pandas=1.2
   - panel
   - param>=1.11.1
-  - pdal=2.2
   - pillow
   - pip
   - psycopg2
+  - pycrs
   - pyproj
   - python=3.8
-  - python-pdal=2.4=py38h1fd1430_1
-  - pystac
   - rasterio
-  - rasterstats
   - rioxarray
   - requests
   - s3fs
   - scikit-learn
-  - scikit-image
   - scipy
   - seaborn
   - shapely
+  - tensorflow=2.5
   - zarr
   - pip:
-    - pystac-client
     - sphinxcontrib-bibtex==2.2.0
-    - stackstac
     - git+https://github.com/snowex/snowexsql.git
     - git+https://github.com/snowex-hackweek/snowmicropyn.git@master
     - git+https://github.com/ICESat2-SlideRule/sliderule-python@v1.0.7
+    - git+https://github.com/ulmo-dev/ulmo.git@v0.8.7
