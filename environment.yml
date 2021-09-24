@@ -32,7 +32,7 @@ dependencies:
   - jupyterhub-singleuser
   - jupyter-server-proxy
   - jupyterlab-git
-  - jupyterlab>=3.1
+  - jupyterlab>=3.0.13
   - jupyter-resource-usage
   - matplotlib
   - nbgitpuller=0.9
@@ -53,6 +53,7 @@ dependencies:
   - scikit-learn
   - scipy
   - seaborn
+  - setuptools<58 
   - shapely
   - tensorflow=2.5
   - zarr
