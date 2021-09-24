@@ -32,7 +32,7 @@ dependencies:
   - jupyterhub-singleuser
   - jupyter-server-proxy
   - jupyterlab-git
-  - jupyterlab=3
+  - jupyterlab>=3.1
   - jupyter-resource-usage
   - matplotlib
   - nbgitpuller=0.9
